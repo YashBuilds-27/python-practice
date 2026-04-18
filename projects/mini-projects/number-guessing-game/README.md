@@ -31,5 +31,3 @@ A fun and simple Python terminal game where the computer generates a random numb
 - `try-except`
 - `if-elif-else`
 - `abs()` for distance checking
-
-## ▶️ Run Co
