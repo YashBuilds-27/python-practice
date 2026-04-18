@@ -77,8 +77,7 @@ This project helps build a strong foundation in:
 
 ## 👨‍💻 Author
 
-Created by **Yash**
-Learning Python Through Projects
+Created by **Yash** | Learning Python Through Projects
 
 ---
 
