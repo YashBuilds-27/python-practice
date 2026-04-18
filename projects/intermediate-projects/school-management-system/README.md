@@ -81,8 +81,7 @@ Tables Used:
 
 ## 👨‍💻 Author
 
-Created by **Yash**
-Learning Python & Database Projects
+Created by **Yash** | Learning Python & Database Projects
 
 ---
 
