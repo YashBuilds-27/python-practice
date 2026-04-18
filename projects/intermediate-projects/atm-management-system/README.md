@@ -73,8 +73,7 @@ This project was made to improve understanding of:
 
 ## 👨‍🎓 Author
 
-Created by **Yash**
-Learning Python & Building Projects
+Created by **Yash** | Learning Python & Building Projects
 
 ---
 
