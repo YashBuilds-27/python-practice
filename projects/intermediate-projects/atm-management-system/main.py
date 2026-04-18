@@ -79,21 +79,29 @@ def history(acc):
 
 def create():
     try:
-        print("""\n**********NOTE**********
+        print("""\n1. Confirm creating account
+2. Exit\n""")
+        con=input("Enter choice:")
+        if con not in ['1','2']:
+            print("\n(X)  INVALID CHOICE  (X)\n")
+        elif con=='1':
+            print("""\n**********NOTE**********
 1. ACCOUNT NUMBER MUST BE OF "10" DIGITS
 2. PIN MUST BE OF "4" DIGITS\n""")
-        name=input("Enter account holder's name:")
-        account=input("Enter account number:")
-        pin=input("Entered 4 digit pin:")
-        if check(account,pin) and account not in accounts :
-            with open("accounts.json",'w') as file:
-                new_account={account:{"pin":pin,"name":name,"bal":0.0}}
-                accounts.update(new_account)
-                json.dump(accounts,file)
-            print("\nACCOUNT CREATED SUCCESSFULLY\n")
-            return load_accounts()
-        else:
-            print("\nACCOUNT ALREADY EXITS\n")
+            name=input("Enter account holder's name:")
+            account=input("Enter account number:")
+            pin=input("Entered 4 digit pin:")
+            if check(account,pin) and account not in accounts :
+                with open("accounts.json",'w') as file:
+                    new_account={account:{"pin":pin,"name":name,"bal":0.0}}
+                    accounts.update(new_account)
+                    json.dump(accounts,file)
+                print("\nACCOUNT CREATED SUCCESSFULLY\n")
+                return load_accounts()
+            else:
+                print("\nACCOUNT ALREADY EXITS\n")
+        elif con=='2':
+            print('\nExited\n')
     except ValueError:
         print("\n(X)    INVALID DETAILS ENTERED    (X)\n")
 
